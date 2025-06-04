@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elixir del Arado</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff8f0; color: #333; }
+    header, footer { background-color: #5e3b1d; color: white; text-align: center; padding: 1em; }
+    nav a { margin: 0 1em; color: white; text-decoration: none; }
+    section { padding: 2em; }
+    h1, h2 { color: #5e3b1d; }
+    .productos { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1em; }
+    .producto { width: 200px; background: #fff; border: 1px solid #ccc; padding: 1em; border-radius: 8px; text-align: center; }
+    .producto img { max-width: 100%; height: auto; border-radius: 8px; }
+    .agaves { display: flex; gap: 1em; flex-wrap: wrap; justify-content: center; }
+    .agaves img { width: 200px; height: auto; border-radius: 8px; }
+    form { max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 1em; }
+    input, textarea { padding: 0.5em; border: 1px solid #ccc; border-radius: 5px; }
+    button { background-color: #5e3b1d; color: white; border: none; padding: 0.7em; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #7c5126; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Elixir del Arado</h1>
+    <nav>
+      <a href="#sobre">Sobre el Mezcal</a>
+      <a href="#productos">Productos</a>
+      <a href="#agave">Agave</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre el Mezcal</h2>
+    <p>Elixir del Arado es un mezcal artesanal producido con dedicación y pasión. Nuestro proceso respeta las tradiciones oaxaqueñas, obteniendo un sabor auténtico y puro que representa la cultura del agave.</p>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x300?text=1+Litro" alt="Botella 1 litro">
+        <p>Botella de 1 Litro</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x250?text=1%2F2+Litro" alt="Botella 1/2 litro">
+        <p>Botella de 1/2 Litro</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x200?text=1%2F4+Litro" alt="Botella 1/4 litro">
+        <p>Botella de 1/4 Litro</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="agave">
+    <h2>Agave</h2>
+    <div class="agaves">
+      <img src="https://via.placeholder.com/200x150?text=Agave+1" alt="Agave 1">
+      <img src="https://via.placeholder.com/200x150?text=Agave+2" alt="Agave 2">
+      <img src="https://via.placeholder.com/200x150?text=Agave+3" alt="Agave 3">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formsubmit.co/tu_correo@example.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elixir del Arado. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
